@@ -1,0 +1,17 @@
+.nav-item:hover{
+    background-color: #BCCCDC;
+}
+.navbar-brand{
+    background-color: antiquewhite;
+    color: #2C2C2C;
+}
+#lead-div{
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+   
+}
+.lead{
+    margin: 50px;
+}
