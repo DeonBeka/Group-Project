@@ -4,15 +4,79 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=+, initial-scale=1.0">
     <link rel="stylesheet" href="sign_upcss.css">
-    <title>Document</title>
+    <title>Sign_up Sign_in</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body>
+    <nav>
+        <a href="#" class="logo-container">
+            <div class="logo-symbol"></div>
+            <div class="logo-text">ATHENIAN<span>FIT</span></div>
+        </a>
+        
+        <button class="hamburger" aria-label="Toggle navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
 
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Personal Information</a></li>
+            <li><a href="#">Tracking System</a></li>
+            <ul class="nav-links">
+                <li><a href="login.html"><i class="fa-solid fa-user"></i></a></li>
+            </ul>
+        </ul>
+    </nav>
+    <div>
+        Name:<input id="name_input">
+        Username:<input id="Username_input">
+        Lastname:<input id="Lastname_input">
+    </div>
+  
     
+   
+   <button id="btn1" onclick="document.location='./hsignup.html'">Sign up</button>
 
-     Name:<input id="name_input">
-     Lastname:<input id="Lastname_input">
-     Username:<input id="Username_input">
+   
+
+
+   <footer>
+    <div class="footer-content">
+        <div class="footer-section about">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Personal Information</a></li>
+                <li><a href="#">Tracking System</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section links">
+            <h3>About AthenianFit</h3>
+            <p>Your one-stop destination for unforgettable travel experiences and adventures across Kosovo.</p>
+        </div>
+        <div class="footer-section social">
+            <h3>Follow Us</h3>
+            <a href="https://facebook.com" target="_blank">
+                <i class="fa-brands fa-facebook" aria-hidden="true" style="color:#F2EFE7;" ></i>
+            </a>
+            <a href="https://twitter.com/" target="_blank">
+                <i class="fa-brands fa-twitter" aria-hidden="true" style="color:#F2EFE7;"></i>
+            </a>
+            <a href="https://www.instagram.com/" target="_blank">
+                <i class="fa-brands fa-instagram" aria-hidden="true" style="color:#F2EFE7;"></i>
+            </a>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2025 AthenianFit | All rights reserved</p>
+    </div>
+</footer>
+    
 
        
 
