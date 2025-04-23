@@ -4,73 +4,46 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Athenian Fit</title>
+  <link rel="shortcut icon" href="#" type="image/x-icon">
   <link rel="stylesheet" href="CSS/hOme.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body>
 
-  <!-- Navigation Bar -->
-  <nav class="navbar">
-    <div class="logo">Athenian Fit</div>
-    <ul class="nav-links">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#exercises">Exercises</a></li>
-      <li><a href="#mealplans">Meal Plans</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
+ <!-- Navigation Bar -->
+ <nav>
+  <a href="#" class="logo-container">
+      <div class="logo-symbol"></div>
+      <div class="logo-text">ATHENIAN<span>FIT</span></div>
+  </a>
+  
+  <button class="hamburger" aria-label="Toggle navigation">
+      <span></span>
+      <span></span>
+      <span></span>
+  </button>
+
+  <ul class="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About Us</a></li>
+      <li><a href="#">Personal Information</a></li>
+      <li><a href="#">Exercises</a></li>
+      <ul class="nav-links">
+          <li><a href="login.html"><i class="fa-solid fa-user"></i></a></li>
+      </ul>
+  </ul>
+</nav>
 
   <!-- Hero Section -->
   <section class="hero" id="home">
+    <!-- <img src="Videos_Images/dumbells.jpg" alt="Background" class="hero-img">
+      <div class="overlay"></div> -->
     <div class="hero-content">
       <h1>Unleash Your Potential with Athenian Fit</h1>
       <p>Personalized fitness plans with exercises and meal guides to help you become your best self!</p>
-      <a href="#exercises" class="cta-btn">Start Now</a>
     </div>
   </section>
 
-  <!-- Exercises Section -->
-  <section class="exercises" id="exercises">
-    <h2>Get Stronger with These Exercises</h2>
-    <div class="exercise-cards">
-      <div class="card">
-        <img src="Videos_Images/Pushups.png" alt="Push-ups" />
-        <h3>Push-ups</h3>
-        <p>Target your chest, triceps, and shoulders with this effective bodyweight exercise.</p>
-      </div>
-      <div class="card">
-        <img src="Videos_Images/squat.png" alt="Squats" height="180px"/>
-        <h3>Squats</h3>
-        <p>Strengthen your lower body and build a solid foundation with this full-body movement.</p>
-      </div>
-      <div class="card">
-        <img src="Videos_Images/plank.png" alt="Planks" />
-        <h3>Plank</h3>
-        <p>Work your core, shoulders, and arms for better stability and strength.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Meal Plans Section -->
-  <section class="meal-plans" id="mealplans">
-    <h2>Delicious Meal Plans for Your Fitness Goals</h2>
-    <div class="meal-cards">
-      <div class="meal-card">
-        <img src="Videos_Images/Oatmeal-with-berries.png" alt="Oatmeal & Berries" />
-        <h3>Oatmeal & Berries</h3>
-        <p>A nutritious breakfast that’s high in fiber, antioxidants, and vitamins to kickstart your day.</p>
-      </div>
-      <div class="meal-card">
-        <img src="Videos_Images/Grilled-Chicken-Salad.png" alt="Grilled Chicken Salad" height="200px"/>
-        <h3>Grilled Chicken Salad</h3>
-        <p>Lean protein and fresh vegetables to fuel your afternoon with energy and strength.</p>
-      </div>
-      <div class="meal-card">
-        <img src="Videos_Images/salmonAndVeggies.png" alt="Salmon & Veggies" height="200px"/>
-        <h3>Salmon & Veggies</h3>
-        <p>Omega-3 rich salmon paired with roasted vegetables for a well-rounded, nutritious dinner.</p>
-      </div>
-    </div>
-  </section>
 
   <!-- Call to Action -->
   <section class="cta" id="contact">
@@ -80,20 +53,63 @@
       <a href="/signup" class="cta-btn">Sign Up Now</a>
     </div>
   </section>
+  <div class="h2_problem">
+  <h2>What some custumers said about us!</h2>
+  </div>
+  <section class="costumer-review">
+  
+    
+    <div class="review-card">
+      <h3>Customer Review</h3>
+      <p>"Amazing gym! Super clean, friendly staff, and great equipment. I’ve seen real results since joining—highly recommend!"</p>
+      <div class="reviewer">– Micheal Orlando</div>
+    </div>
+    <div class="review-card">
+      <h3>Customer Review</h3>
+      <p>"Love this place! The trainers are super motivating, and the vibe keeps me coming back. Best decision I’ve made for my health."</p>
+      <div class="reviewer">– Jessica M.</div>
+    </div>
+    <div class="review-card">
+      <h3>Customer Review</h3>
+      <p>"Great atmosphere and top-notch equipment. I actually look forward to my workouts now!"</p>
+      <div class="reviewer">– Daniel R.</div>
+    </div>
+  </section>
 
   <!-- Footer -->
-  <footer class="footer">
+  <footer>
     <div class="footer-content">
-      <div class="footer-left">
-        <h3>Athenian Fit</h3>
-        <p>Email: contact@athenianfit.com</p>
-        <p>Phone: (987) 654-3210</p>
-      </div>
-      <div class="footer-right">
-        <p>&copy; 2025 Athenian Fit. All rights reserved.</p>
-      </div>
+        <div class="footer-section about">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Personal Information</a></li>
+                <li><a href="#">Exercises</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section links">
+            <h3>About AthenianFit</h3>
+            <p>Your one-stop destination for unforgettable travel experiences and adventures across Kosovo.</p>
+        </div>
+        <div class="footer-section social">
+            <h3>Follow Us</h3>
+            <a href="https://facebook.com" target="_blank">
+                <i class="fa-brands fa-facebook" aria-hidden="true" style="color:#F2EFE7;" ></i>
+            </a>
+            <a href="https://twitter.com/" target="_blank">
+                <i class="fa-brands fa-twitter" aria-hidden="true" style="color:#F2EFE7;"></i>
+            </a>
+            <a href="https://www.instagram.com/" target="_blank">
+                <i class="fa-brands fa-instagram" aria-hidden="true" style="color:#F2EFE7;"></i>
+            </a>
+        </div>
     </div>
-  </footer>
+    <div class="footer-bottom">
+        <p>&copy; 2025 AthenianFit | All rights reserved</p>
+    </div>
+</footer>
 
   <script src="JS/home.js"></script>
 </body>
