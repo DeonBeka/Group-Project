@@ -230,7 +230,29 @@ nav {
   margin-bottom: 30px;
 }
 
+/* Slide SHow */
+.slide{
+  width: 90%;
+}
+#slideWrapper{
+  display: flex;
+  justify-content: center;
+  align-items: left;
+}
+#prev , #next{
+  cursor: pointer;
+  position:absolute;
+  top: 1200px;
+  padding: 20px;
+}
 
+#next{
+  right: 0;
+}
+
+#next:hover , #prev:hover{
+  background-color: rgba(0, 0, 0, 0.5);
+}
 /* CTA Section */
 .cta {
   background-color:  #48A6A7;
@@ -289,7 +311,6 @@ nav {
   color: #333;
 }
 .h2_problem{
-  max-width: ;
   display: flex;
   background-color: #006A71;
   justify-content: center;
