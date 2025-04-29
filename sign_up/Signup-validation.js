@@ -1,5 +1,5 @@
 document.getElementById('signupForm').addEventListener('submit', function(event) {
-    event.preventDefault(); // Prevent form submission
+    event.preventDefault();
 
     const username = document.getElementById('username').value.trim();
     const email = document.getElementById('email').value.trim();
@@ -10,21 +10,21 @@ document.getElementById('signupForm').addEventListener('submit', function(event)
     const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{6,}$/;
 
     if (!usernameRegex.test(username)) {
-        alert("Username must be at least 5 alphabetic characters.");
+        alert("Emri i perdoruesite duhe te kete minimum 5 karaktere");
         return;
     }
 
     if (!emailRegex.test(email)) {
-        alert("Please enter a valid email address.");
+        alert("ju lutem shkruani nje email valide");
         return;
     }
 
     if (!passwordRegex.test(password)) {
-        alert("Password must be at least 6 characters and include uppercase, lowercase, and a number.");
+        alert("passwordi duhet te jete minimumi 6 karaktere, te medha, te vogla dhe numra ");
         return;
     }
 
     // If validation passes
-    alert("Sign up successful!");
+    alert("Regjistrimi i suksesshem");
     window.location.href = "../Home.html";
 });
