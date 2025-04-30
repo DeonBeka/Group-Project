@@ -42,20 +42,35 @@
       <p>Personalized fitness plans with exercises and meal guides to help you become your best self!</p>
     </div>
   </section>
+  <!-- SlideSHow -->
+  <div class="slideshow-container">
 
-  <div id="slideWrapper">
-    <div class="slide">
-        <img src="Videos_Images/motivational.jpg" alt="" width="90%" height="500px">
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="Videos_Images/motivational.jpg" style="width:100%">
     </div>
-    <div class="slide">
-        <img src="Videos_Images/workharder.jpg" alt="" width="90%" height="500px">
+    
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="Videos_Images/workharder.jpg" style="width:100%">
     </div>
-    <div class="slide">
-        <img src="Videos_Images/running.jpg" alt="" width="90%" height="500px">
+    
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="Videos_Images/running.jpg" style="width:100%" height="600px">
     </div>
-</div>
-<a id="prev"><img src="Videos_Images/backward.png" alt="backward" width="50px" height="50px" onclick="plusSlides(-1)"></a>
-<a  id="next"><img src="Videos_Images/forward.png" alt="forward" width="50px" height="50px" onclick="plusSlides(1)"></a>
+    
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+    
+    </div>
+    <br>
+    
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span> 
+      <span class="dot" onclick="currentSlide(2)"></span> 
+      <span class="dot" onclick="currentSlide(3)"></span> 
+    </div>
 
   <!-- Call to Action -->
   <section class="cta" id="contact">

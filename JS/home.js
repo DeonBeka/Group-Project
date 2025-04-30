@@ -3,36 +3,45 @@ function scrollToJoin() {
     joinSection.scrollIntoView({ behavior: 'smooth' });
   }
 
-/** Slide Show */
-var slideIndex = 0;
+/** Slide SHow */
+var slideIndex = 1;
+showSlides(slideIndex);
 
-function showSlides(n){
-    var i;
-    var slides = document.getElementsByClassName("slide");
-      
-    for(i = 0 ; i < slides.length; i++){
-        slides[i].style.display = "none";
-    }
-    if(n > slides.length){
-        slideIndex = 1
-    }
-    if(n < 1){
-        slideIndex = slides.length;
-    }
-    slides[slideIndex -1].style.display = "block";
-  
+function plusSlides(n) {
+  showSlides(slideIndex += n);
 }
-showSlides()
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
   
 function plusSlides(n){
     slideIndex += n;
     showSlides(slideIndex)
 }
-setInterval(plusSlides, 3000, 1);
+setInterval(plusSlides, 5000, 1);
 
 
 
-  function validateForm(event) {
+
+
+function validateForm(event) {
     event.preventDefault();
 
     const formData = {
